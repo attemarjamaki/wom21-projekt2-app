@@ -1,0 +1,26 @@
+{
+  "name": "wom21-projekt2-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attemarjamaki/wom21-projekt2-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/attemarjamaki/wom21-projekt2-app/issues"
+  },
+  "homepage": "https://github.com/attemarjamaki/wom21-projekt2-app#readme",
+  "devDependencies": {
+    "electron": "^15.1.2"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "electron-fetch": "^1.7.4"
+  }
+}

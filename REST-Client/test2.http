@@ -1,0 +1,17 @@
+@baseUrl = https://young-reaches-45720.herokuapp.com
+
+
+### GET ORDERS
+GET  {{baseUrl}}/orders
+Content-Type: application/json
+
+
+### Login
+POST {{baseUrl}}/users/login
+Content-Type: application/json
+
+
+{
+    "email": "jon@doe.com",
+    "password": "Password123"
+}

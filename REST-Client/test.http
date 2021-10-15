@@ -1,0 +1,57 @@
+
+@baseUrl = https://pure-tor-40390.herokuapp.com
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTY0NGY3YWU0NWRlN2JjMWRmOTYzNjQiLCJlbWFpbCI6ImpvbkBkb2UuY29tIiwiaWF0IjoxNjM0MzMwNDI5LCJleHAiOjE2MzQ0MTY4Mjl9.2SqsTZ8ZKjTNofM0jDQLv2rkCssgcR2KUoJSMMc3j0E
+
+
+### CREATE A USER
+POST {{baseUrl}}/users
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "firstname": "jon",
+    "lastname": "doe",
+    "email": "jon@getter.com",
+    "password": "Password123"
+}
+
+### Login
+POST {{baseUrl}}/users/login
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "email": "jon@doe.com",
+    "password": "Password123"
+}
+
+
+
+### GET users
+GET {{baseUrl}}/users
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### GET Cabins/owned
+
+GET {{baseUrl}}/cabins/owned
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### POST Cabins
+POST {{baseUrl}}/cabins
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+{
+    "adress": "Walter Wihites Garage",
+    "size": "200",
+    "sauna": true,
+    "beach": false,
+    "price": "400000"
+}
+
+
